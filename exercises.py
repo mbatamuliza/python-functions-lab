@@ -167,6 +167,20 @@ print('Exercise 8:', product(-1, 4))
 #
 # Define the function and then call it below.
 
+def basic_calculator(num1, num2, operation):
+    if operation == 'add':
+        return num1 + num2
+    elif operation == 'subtruct':
+        return num1 - num2
+    elif operation == 'multiply':
+        return num1 * num2
+    elif operation == 'divide':
+        if num2 != 0:
+            return num1 / num2
+        else: 
+            print("Cannot divide by zero")
+    else:
+          print("invalid operation")
 
 
 print('Exercise 9 Result:', basic_calculator(10, 5, "subtract"))
