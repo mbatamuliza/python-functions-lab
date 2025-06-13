@@ -105,13 +105,12 @@ print('Exercise 5:', sum_to(10))
 #
 # Define your function and test it with different inputs.
 
-def largest(num1, num2,num3):
+def largest(num1, num2, num3):
     nums = [num2, num3]
-    # max_value = num1 (can  i add value)
     max = num1
     for num in nums:
         if num > max:
-            max =num
+            max = num
     return max         
 
 print('Exercise 6:', largest(10, 4, 2))
